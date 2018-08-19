@@ -5,8 +5,8 @@ class ContactPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>About</h1>
-        <p>This application uses react, redux, react router and other libs</p>
+        <h1>Contact</h1>
+        <p>Will add the social media tags here</p>
       </div>
     );
   }

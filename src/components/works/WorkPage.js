@@ -5,8 +5,8 @@ class WorkPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>About</h1>
-        <p>This application uses react, redux, react router and other libs</p>
+        <h1>Projects</h1>
+        <p>Will add a slide panel type view of projects here</p>
       </div>
     );
   }

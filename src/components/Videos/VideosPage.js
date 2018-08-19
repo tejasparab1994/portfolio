@@ -5,8 +5,8 @@ class VideosPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>About</h1>
-        <p>This application uses react, redux, react router and other libs</p>
+        <h1>Videos and Blog Posts</h1>
+        <p>Youtube explanation videos and the old blog link</p>
       </div>
     );
   }

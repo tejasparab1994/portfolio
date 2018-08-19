@@ -149,5 +149,28 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 @media screen and (max-width: 46.5em) {
 	.bl-box {
 		font-size: 75%;
+		display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: vertical;
+    -ms-flex-direction: vertical;
+    flex-direction: vertical;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+		-ms-box-pack: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+		-ms-box-align: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 	}
 }
