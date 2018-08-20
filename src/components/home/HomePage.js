@@ -3,9 +3,6 @@ import {Link} from 'react-router-dom';
 
 class HomePage extends React.Component {
 
-  componentDidUpdate(prevProps){
-    console.log("mount");
-  }
   render() {
     return (
       <div id = "bl-main" className="bl-main">
@@ -33,7 +30,7 @@ class HomePage extends React.Component {
         <section>
           <div className = "bl-box">
             <h2>
-              <Link to = "contact" className = "bl-icon bl-icon-contact"style={{ textDecoration: 'none', color:'white' }}>Contact</Link>
+              <Link to = "contact" className = "bl-icon bl-icon-contact" style={{ textDecoration: 'none', color:'white' }}>Contact</Link>
             </h2>
           </div>
         </section>
