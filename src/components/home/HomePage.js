@@ -2,6 +2,10 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 class HomePage extends React.Component {
+
+  componentDidUpdate(prevProps){
+    console.log("mount");
+  }
   render() {
     return (
       <div id = "bl-main" className="bl-main">
