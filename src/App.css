@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
+	src:url('./fonts/icomoon.eot');
+	src:url('./fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/icomoon.woff') format('woff'),
+		url('./fonts/icomoon.ttf') format('truetype'),
+		url('./fonts/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -143,6 +143,14 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 	-moz-transform: translateY(-15px);
 	-ms-transform: translateY(-15px);
 	transform: translateY(-15px);
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
 }
 
 
