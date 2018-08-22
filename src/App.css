@@ -23,14 +23,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	background: #F06060;
-	color: #fff;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-	line-height: 1.5;
-	margin: 0;
-	padding: 0;
-}
 
 
 /* Home Page */
@@ -159,60 +151,68 @@ body {
 	transform: translateY(-15px);
 }
 
-/* Page  transitions */
 
-.page {
-	height: 100vh;
-	/* padding: calc(15% + 1.5em) 5% 5%; */
-	overflow-y: auto;
-	position: fixed;
+/* Page Transitions */
+
+.fade-enter {
+	opacity: 0;
+	transition: all 2500ms 10s ease-in;
+}
+
+.fade-enter .fade-enter-active {
+	opacity: 0;
+	transition: all 750ms ease-out;
+}
+
+
+.fade-enter-done {
+	opacity: 1;
+	transition: all 750ms ease-out;
+}
+
+.fade-exit {
+	opacity: 1;
+}
+
+.fade-exit.fade-exit-active{
+	opacity: 0;
+	transition: all 750ms ease-out;
+}
+
+
+/* .dcontent-wradpper {
+	display: flex;
+	flex-direction: column;
+	postion: absolute;
+	left: 0;
 	top: 0;
 	width: 100%;
-	-webkit-overflow-scrolling: touch;
-	transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
-	border-style: solid;
-	border-width: 5px;
+} */
+
+
+/* cancel button */
+
+
+.cancelButton{
+	float: right;
+	padding-top: 1.3rem;
+	padding-right: 1rem;
 }
 
-.page-enter {
-	transform: translate(-100%, 0);
+.fa .fa-remove {
+	font-size: 3rem;
 }
-
-.page-enter-active {
-	transform: translate(0, 0);
-}
-
-.page-exit {
-	box-shadow: 0 0 5em 0 rgba(0, 0, 0, .5) inset;
-	transform: translate(-100%, 0);
-}
-
-.page--prev.page-enter {
-	transform: translate(100%, 0);
-}
-
-.page--prev.page-enter-active {
-	transform: translate(0, 0);
-}
-
-.page--prev.page-exit {
-	transform: translate(100%, 0);
-}
-
-.page-exit .page__inner {
-	opacity: 0;
-	transform: scale(0.9);
-	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-.page h1 {
-	margin-top: 0;
-}
-
 
 
 /* About page */
+
+
+.yellow-text {
+	color:yellow;
+}
+
 .flextry {
+
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -222,8 +222,7 @@ body {
 	/* padding: calc(15% + 1.5rem) 5% 5%; */
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 1.2em;
-
-
+	color: white;
 }
 
 
@@ -254,6 +253,7 @@ body {
 }
 
 
+
 .messigif {
 	background-color: #fff;
 	z-index: 2;
@@ -266,6 +266,7 @@ body {
 	display:flex;
 	font-size: 3.5rem;
 	justify-content: center;
+
 }
 
 .sm-heading {
@@ -274,10 +275,6 @@ body {
 	padding: 0.2rem 1rem;
 	font-size: 1.5rem;
 	justify-content: center;
-}
-
-.text-secondary {
-	color: yellow;
 }
 
 
@@ -301,34 +298,35 @@ body {
 	flex-flow: wrap;
 	flex-direction: column;
 	padding: 10%;
-	/* color: yellow; */
+
 }
 
 .fourthdiv {
+	/* background-color: green; */
 	font-family: 'Lato', sans-serif;
 	line-height: 1.8;
 	font-size: 1.5rem;
 }
 
 
-.cancelButton{
-	float: right;
-	padding-top: 1.3rem;
-	padding-right: 1rem;
-}
 
-.fa .fa-remove {
-	font-size: 3rem;
-}
-
+/* footer for all page */
 
 .footer {
 	display: flex;
 	flex-direction: row;
+	flex-flow: wrap;
 	background: #272727;
 	width: 100%;
 	line-height: 20px;
-	padding: 1.5rem 5% 5%;
+	/* padding: 1.5rem 5% 5%; */
+	color: white;
+	justify-content: space-around;
+}
+
+
+.footer > * {
+	flex: 0 0 25%;
 }
 
 /* .address {
@@ -358,6 +356,85 @@ body {
 .footer >* {
 	flex: 0 0 25%;
 }
+
+
+/* footer end */
+
+
+/* work page */
+
+.workFlex {
+
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	flex-flow: wrap;
+	padding: 1.5rem 5% 5%;
+	/* padding: calc(15% + 1.5rem) 5% 5%; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.2rem;
+	color: white;
+	justify-content: space-around;
+}
+
+.workFlex >* {
+	flex: 0 0 30%;
+}
+
+.work_items{
+	margin-bottom: 1rem;
+}
+
+.work_title {
+	display:flex;
+	font-size: 3.5rem;
+	/* justify-content: center; */
+	padding: 1.6rem 0 0 6rem;
+	color: white;
+	font-family: 'Lato';
+	flex-flow: wrap;
+
+}
+
+.skills {
+	padding-top: 1rem;
+	font-family: 'Rajdhani';
+}
+
+
+
+/* .btn_flex {
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 100%;
+} */
+
+
+@media screen and (max-width: 800px) {
+
+	.workFlex {
+		flex-direction: column;
+		font-size: 1rem;
+	}
+
+	.workFlex>* {
+		flex: 0 0 50%;
+	}
+
+	.work_items {
+		margin: 1rem;
+	}
+
+
+	.work_title {
+		font-size: 20px;
+	}
+}
+
+
+
+
 
 
 @media screen and (max-width: 918px) {
@@ -511,7 +588,28 @@ body {
 		/* margin-top: -10%; */
 	}
 
+
 }
+
+
+@media screen and (max-width: 1200px) {
+	.workFlex>* {
+		flex: 0 0 50%;
+	}
+
+	.work_items {
+		margin: 1rem;
+	}
+
+	.work_title {
+		font-size: 3rem;
+	}
+
+}
+
+
+
+
 
 
 @media screen and (max-width: 1310px) {

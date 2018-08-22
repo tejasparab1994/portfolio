@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from '../common/Page';
+// import Page from '../common/Page';
 import {Link} from 'react-router-dom';
 import tejas1 from './tejas1.jpeg';
 import messi from "./messi.gif";
@@ -12,10 +12,16 @@ const close = {
 };
 
 class AboutPage extends React.Component {
+
+
+  componentDidMount(){
+    document.body.style.backgroundColor = "#F06060";
+  }
+
   render() {
     return (
-      <Page background="#F06060" color= "#fffff">
-        <div>
+        <div className = "aboutPage">
+
           <Link to ="/" className = "cancelButton">
             <i className="fa fa-remove" style={close}></i>
           </Link>
@@ -25,31 +31,31 @@ class AboutPage extends React.Component {
             </div>
             <div className = "seconddiv">
               <div className = "name">
-                <span className="text-secondary"><u>Hi</u></span>,&nbsp;I&nbsp;am&nbsp;<u>Tejas</u><span className="text-secondary"><u>&nbsp;Parab</u></span>
+                <span className="yellow-text"><u>Hi</u></span>,&nbsp;I&nbsp;am&nbsp;<u>Tejas</u><span className="yellow-text"><u>&nbsp;Parab</u></span>
               </div>
               <div className = "sm-heading">
-                <u>Full&nbsp;Stack&nbsp;Web</u><span className="text-secondary"><u>&nbsp;Developer</u></span>&nbsp;&&nbsp;<u>Programmer</u>
+                <u>Full&nbsp;Stack&nbsp;Web</u><span className="yellow-text"><u>&nbsp;Developer</u></span>&nbsp;&&nbsp;<u>Programmer</u>
               </div>
             </div>
 
             <div className = "thirddiv">
               <div className = "fewThings">
-                <u>Few <span className="text-secondary">Things </span><span className="text-secondary">about</span> me</u>
+                <u>Few <span className="yellow-text">Things </span><span className="yellow-text">about</span> me</u>
 
               </div>
             </div>
             <div className = "fourthdiv">
               <p>
-                <b><u><span className="text-secondary">The short version</span></u>: </b>
+                <b><u><span className="yellow-text">The short version</span></u>: </b>
                 I am Tejas Parab, a graduate student at Northeastern University currently pursuing my Master's degree in Computer Science.
-                I love working with <span className="text-secondary">React, redux, mongoDB, express and node</span>. I am also skilled in
-                <span className = "text-secondary">elixir</span> and the <span className = "text-secondary">Phoenix Framework </span>
+                I love working with <span className="yellow-text">React, redux, mongoDB, express and node</span>. I am also skilled in
+                <span className = "yellow-text"> elixir</span> and the <span className = "yellow-text">Phoenix Framework </span>
                 having built multiple projects both personal and academic using these technologies.
 
               </p>
               <img src ={messi} alt ="skills" className="messigif"></img>
               <p>
-                <b><u><span className="text-secondary">The longer version</span></u>: </b>
+                <b><u><span className="yellow-text">The longer version</span></u>: </b>
                 I love building websites and learn about new technologies in our domain. I have been building websites for over 4 years now. My journey began when I started a blog as
                 a 16 year old with a friend of mine back in 2010 <a href={`https://new-world-ro.blogspot.com/`} target="_blank">(Link to the embarrassing blog)</a>.</p>
 
@@ -77,7 +83,6 @@ class AboutPage extends React.Component {
           </div>
         </div>
 
-      </Page>
     );
   }
 }

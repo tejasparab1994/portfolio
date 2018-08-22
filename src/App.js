@@ -13,17 +13,19 @@ const App = () => (
     <div className = "mycontainer">
       <Route
         render = {({ location }) => (
-          <TransitionGroup>
-            <CSSTransition key = {location.key} classNames = "page" timeout={{enter: 1000, exit: 1000,}}>
-              <Switch location = {location} >
+          <TransitionGroup className = "transition-group">
+            <CSSTransition key = {location.key} classNames = "fade" timeout={750}>
+              <div className = "dcontent-wradpper">
+                <Switch location = {location} >
 
-                <Route exact path = "/" component= {HomePage} />
-                <Route path = "/about" component= {AboutPage} />
-                <Route path = "/works" component = {WorkPage} />
-                <Route path = "/contact" component= {ContactPage} />
-                <Route path = "/videos" component= {VideosPage} />
-                <Route render={() => <div>Not Found</div>} />
-              </Switch>
+                  <Route exact path = "/" component= {HomePage} />
+                  <Route path = "/about" component= {AboutPage} />
+                  <Route path = "/works" component = {WorkPage} />
+                  <Route path = "/contact" component= {ContactPage} />
+                  <Route path = "/videos" component= {VideosPage} />
+                  <Route render={() => <div>Not Found</div>} />
+                </Switch>
+                </div>
             </CSSTransition>
           </TransitionGroup>
         )}
