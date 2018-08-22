@@ -9,28 +9,28 @@ class HomePage extends React.Component {
         <section>
           <div className = "bl-box">
             <h2>
-              <Link to="about" className = "bl-icon bl-icon-about" style={{ textDecoration: 'none', color:'white' }}>About</Link>
+              <Link to="about" className = "bl-icon bl-icon-about" style={{ textDecoration: 'none', color:'white' }}>ABOUT</Link>
             </h2>
           </div>
         </section>
         <section id = "bl-work-section">
           <div className = "bl-box">
             <h2>
-              <Link to = "works" className = "bl-icon bl-icon-works" style={{ textDecoration: 'none', color:'white' }}>Works</Link>
+              <Link to = "works" className = "bl-icon bl-icon-works" style={{ textDecoration: 'none', color:'white' }}>WORKS</Link>
             </h2>
           </div>
         </section>
         <section>
           <div className = "bl-box">
             <h2>
-              <Link to="videos" className="bl-icon bl-icon-blog" style={{ textDecoration: 'none', color:'white' }}>Videos & Blog</Link>
+              <Link to="videos" className="bl-icon bl-icon-blog" style={{ textDecoration: 'none', color:'white' }}>VIDEOS & BLOG</Link>
             </h2>
           </div>
         </section>
         <section>
           <div className = "bl-box">
             <h2>
-              <Link to = "contact" className = "bl-icon bl-icon-contact" style={{ textDecoration: 'none', color:'white' }}>Contact</Link>
+              <Link to = "contact" className = "bl-icon bl-icon-contact" style={{ textDecoration: 'none', color:'white' }}>CONTACT</Link>
             </h2>
           </div>
         </section>
