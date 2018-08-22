@@ -322,6 +322,43 @@ body {
 }
 
 
+.footer {
+	display: flex;
+	flex-direction: row;
+	background: #272727;
+	width: 100%;
+	line-height: 20px;
+	padding: 1.5rem 5% 5%;
+}
+
+/* .address {
+	padding-top: 67px;
+	padding-bottom: 30px;
+	color: #93939393;
+}
+
+.email {
+	padding-top: 67px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+}
+
+.contact {
+	padding-top: 67px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+}
+
+.copyright {
+	padding-top: 67px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+} */
+
+.footer >* {
+	flex: 0 0 25%;
+}
+
 
 @media screen and (max-width: 918px) {
 
