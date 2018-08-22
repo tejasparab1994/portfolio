@@ -31,7 +31,12 @@ class DevConnector extends React.Component {
 
             <Button color="link" style={{float: 'right'}}>Live Link</Button>
           </CardBody>
-          <CardFooter></CardFooter>
+          <CardFooter style={{textAlign: 'center'}}>
+            <i class="devicon-mongodb-plain colored"></i>
+            <i class="devicon-express-original"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+          </CardFooter>
         </Card>
       </div>
     );

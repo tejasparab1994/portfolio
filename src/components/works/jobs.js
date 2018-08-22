@@ -31,7 +31,11 @@ class Jobs extends React.Component {
 
             <Button color="link" style={{float: 'right'}}>Live Link</Button>
           </CardBody>
-          <CardFooter></CardFooter>
+          <CardFooter style={{textAlign: 'center'}}>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+          </CardFooter>
         </Card>
       </div>
     );

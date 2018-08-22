@@ -13,18 +13,26 @@ class Search extends React.Component {
             <CardHeader>
               <CardTitle style= {{ textAlign: 'center'}}><b><u>Search Engine</u></b></CardTitle>
             </CardHeader>
-            <CardSubtitle>A social media for developers using their Github stats</CardSubtitle>
+            <CardSubtitle>A search engine for wikipedia articles written in Python.</CardSubtitle>
           </CardBody>
           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
           <CardBody>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <CardText style={{textAlign: 'center', display: 'flex', flexFlow: 'column'}}>
+              <div><u>Technologies</u>: </div>
+              <div className="skills">
+                Python, Apache Lucene, BeautifulSoup, Scrapy
 
+              </div>
+            </CardText>
 
             <Button color="info">Know More</Button>
 
             <Button color="link" style={{float: 'right'}}>GitHub Link</Button>
           </CardBody>
-          <CardFooter></CardFooter>
+          <CardFooter style = {{textAlign: 'center'}}>
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-apache-plain-wordmark"></i>
+          </CardFooter>
         </Card>
       </div>
     );

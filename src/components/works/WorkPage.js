@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../common/Page';
 import {Link} from 'react-router-dom';
-import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, CardDeck, Button, CardGroup } from 'reactstrap';
 import DevConnector from './devConnector';
 import Jobs from './jobs';
 import Memory from './memory';
@@ -20,7 +20,7 @@ const close = {
 class WorkPage extends React.Component {
 
   componentDidMount(){
-    document.body.style.backgroundColor="#FA987D";
+    document.body.style.backgroundColor="#EE8216";
   }
 
   render() {

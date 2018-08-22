@@ -14,7 +14,7 @@ class HomePage extends React.Component {
   }
 
   work(){
-  document.body.style.backgroundColor="#FA987D";
+  document.body.style.backgroundColor="#EE8216";
   }
 
   about() {
