@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../common/Page';
 import {Link} from 'react-router-dom';
 import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button , CardHeader, CardFooter} from 'reactstrap';
-
+import tasktracker from './tasktracker.png';
 
 class TaskTracker extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class TaskTracker extends React.Component {
             </CardHeader>
             <CardSubtitle>Assign and track tasks assigned to your teammates.</CardSubtitle>
           </CardBody>
-          <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <CardImg top width="100%" src={tasktracker} alt="Card image cap" />
           <CardBody>
             <CardText style={{textAlign: 'center', display: 'flex', flexFlow: 'column'}}>
               <div><u>Technologies</u>: </div>

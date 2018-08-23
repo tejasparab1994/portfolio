@@ -2,6 +2,7 @@ import React from 'react';
 import Page from '../common/Page';
 import {Link} from 'react-router-dom';
 import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button , CardHeader, CardFooter} from 'reactstrap';
+import dev from './devconnector.png';
 
 
 class DevConnector extends React.Component {
@@ -15,11 +16,11 @@ class DevConnector extends React.Component {
             </CardHeader>
             <CardSubtitle>
               A social media website that connects developers using the Github API.
-              <br />
-              <br/>
+              
+
             </CardSubtitle>
           </CardBody>
-          <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <CardImg top width="100%" src={dev} alt="Card image cap" />
           <CardBody>
             <CardText style={{textAlign: 'center', display: 'flex', flexFlow: 'column'}}>
               <div><u>Technologies</u>: </div>

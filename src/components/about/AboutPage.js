@@ -15,7 +15,7 @@ class AboutPage extends React.Component {
 
 
   componentDidMount(){
-    document.body.style.backgroundColor = "#F06060";
+    document.body.style.backgroundColor = "#F15F11";
   }
 
   render() {
