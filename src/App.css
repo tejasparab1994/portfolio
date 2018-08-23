@@ -401,6 +401,15 @@
 	font-family: 'Rajdhani';
 }
 
+/* .modal {
+	background-color: black;
+	color: white;
+} */
+
+.modal-header {
+	text-align: center;
+}
+
 /* Videos page */
 .videosFlex {
 

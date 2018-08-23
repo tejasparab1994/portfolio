@@ -1,7 +1,7 @@
 import React from 'react';
-import Page from '../common/Page';
+
 import {Link} from 'react-router-dom';
-import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, CardDeck, Button, CardGroup } from 'reactstrap';
+
 import DevConnector from './devConnector';
 import Jobs from './jobs';
 import Memory from './memory';
