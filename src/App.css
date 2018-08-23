@@ -266,7 +266,6 @@
 	display:flex;
 	font-size: 3.5rem;
 	justify-content: center;
-
 }
 
 .sm-heading {
@@ -402,16 +401,38 @@
 	font-family: 'Rajdhani';
 }
 
+/* Videos page */
+.videosFlex {
 
-
-/* .btn_flex {
 	display: flex;
-	flex-direction: row;
-	flex: 0 0 100%;
-} */
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	padding: 1.5rem 5% 5%;
+	/* padding: calc(15% + 1.5rem) 5% 5%; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.2rem;
+	color: white;
+	justify-content: space-around;
+}
 
+
+.videosFlex {
+	flex: 0 0 100%;
+}
+
+
+#ytplayer {
+	margin: 1rem;
+}
 
 @media screen and (max-width: 800px) {
+
+
+	.name {
+		margin-top: 1rem !important;
+	}
 
 	.workFlex {
 		flex-direction: column;

@@ -10,7 +10,7 @@ import Search from './search';
 import TaskTracker from './tasktracker';
 import Virtual from './virtual';
 import WebServer from './webserver';
-
+import Footer from '../common/Footer';
 
 const close = {
   fontSize: '40px',
@@ -43,6 +43,7 @@ class WorkPage extends React.Component {
           <Search />
           <Virtual />
         </div>
+        <Footer />
       </div>
     );
   }

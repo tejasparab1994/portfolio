@@ -21,7 +21,7 @@ class WebServer extends React.Component {
               <div><u>Technologies</u>: </div>
               <div className="skills">
                 Rust, Apache Benchmark
-                <br />
+
               </div>
             </CardText>
             <Button color="info">Know More</Button>
