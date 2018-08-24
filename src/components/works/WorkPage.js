@@ -12,6 +12,7 @@ import Virtual from './virtual';
 import WebServer from './webserver';
 import Footer from '../common/Footer';
 
+
 const close = {
   fontSize: '40px',
   color: 'white'
@@ -48,5 +49,7 @@ class WorkPage extends React.Component {
     );
   }
 }
+
+
 
 export default WorkPage;

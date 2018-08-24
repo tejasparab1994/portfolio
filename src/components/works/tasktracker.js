@@ -24,7 +24,7 @@ class TaskTracker extends React.Component {
   render() {
     return (
       <div>
-        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className = "work_items">
+        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', height: '95%' }} className = "work_items">
           <CardBody>
             <CardHeader>
               <CardTitle style= {{ textAlign: 'center'}}><b><u>TaskTracker</u></b></CardTitle>
@@ -46,16 +46,25 @@ class TaskTracker extends React.Component {
             <div>
               <Button color="info" onClick = {this.toggle}>Know More</Button>
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
-                <ModalHeader toggle={this.toggle} charCode="❎">Web Server</ModalHeader>
+                <ModalHeader toggle={this.toggle} charCode="❎">Tasktracker</ModalHeader>
                 <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <li>
+                    Built a web application that can be used to track and assign tasks to other users.
+                  </li>
+                  <li>
+                    Developed the front end using react-redux while the back-end using Elixir and Phoenix.
+                  </li>
+                  <li>
+                    Assigned tasks can be marked done by the users once completed hence allowing tracking to check the time taken to complete it.
+                  </li>
                 </ModalBody>
                 <ModalFooter>
-                  <Button color="primary" onClick={this.toggle}>GitHub Link</Button>{' '}
+                  <a href={`https://github.com/tejasparab1994/tasktracker3`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <Button color="link" style={{float: 'right'}}>Code Link</Button>
+              <a href={`https://tasks3.tejasparab1.com/`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Live Link</a>
             </div>
+
 
           </CardBody>
 

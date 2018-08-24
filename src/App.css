@@ -375,6 +375,7 @@
 	font-size: 1.2rem;
 	color: white;
 	justify-content: space-around;
+	align-content: stretch;
 }
 
 .workFlex >* {
@@ -382,7 +383,8 @@
 }
 
 .work_items{
-	margin-bottom: 1rem;
+	/* padding-bottom: 3rem !important; */
+	margin: 1rem;
 }
 
 .work_title {
@@ -393,7 +395,6 @@
 	color: white;
 	font-family: 'Lato';
 	flex-flow: wrap;
-
 }
 
 .skills {
@@ -461,10 +462,6 @@
 		font-size: 20px;
 	}
 }
-
-
-
-
 
 
 @media screen and (max-width: 918px) {
@@ -628,7 +625,7 @@
 	}
 
 	.work_items {
-		margin: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.work_title {

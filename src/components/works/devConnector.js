@@ -23,15 +23,13 @@ class DevConnector extends React.Component {
   render() {
     return (
       <div>
-        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className = "work_items">
+        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', height: '95%' }} className = "work_items">
           <CardBody>
             <CardHeader>
               <CardTitle style= {{ textAlign: 'center'}}><b><u>Dev Connector</u></b></CardTitle>
             </CardHeader>
             <CardSubtitle>
               A social media website that connects developers using the Github API.
-
-
             </CardSubtitle>
           </CardBody>
           <CardImg top width="100%" src={dev} alt="Card image cap" />
@@ -47,15 +45,19 @@ class DevConnector extends React.Component {
             <div>
               <Button color="info" onClick = {this.toggle}>Know More</Button>
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
-                <ModalHeader toggle={this.toggle} charCode="❎">Web Server</ModalHeader>
+                <ModalHeader toggle={this.toggle} charCode="❎">Dev Connector</ModalHeader>
                 <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <li>Built the backend using Nodejs.</li>
+                  <li>Implemented authentication using passport, passport-jwt and jwt.</li>
+                  <li>Stored the posts, profile and user data using mongoDB.</li>
+                  <li>Leveraged Validator to perform server-side validations throughout the application.</li>
+                  <li>Developed the front-end using react-redux.</li>
                 </ModalBody>
                 <ModalFooter>
-                  <Button color="primary" onClick={this.toggle}>GitHub Link</Button>{' '}
+                  <a href={`https://github.com/tejasparab1994/devConnector`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <Button color="link" style={{float: 'right'}}>Code Link</Button>
+              <a href={`https://github.com/tejasparab1994/devConnector`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Code Link</a>
             </div>
 
           </CardBody>

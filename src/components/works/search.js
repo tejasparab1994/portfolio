@@ -24,7 +24,7 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className = "work_items">
+        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', height: '95%' }} className = "work_items">
           <CardBody>
             <CardHeader>
               <CardTitle style= {{ textAlign: 'center'}}><b><u>Search Engine</u></b></CardTitle>
@@ -46,13 +46,17 @@ class Search extends React.Component {
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
                 <ModalHeader toggle={this.toggle} charCode="❎">Web Server</ModalHeader>
                 <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                  <li>Designed retrieval systems using Smoothed Query Likelihood, BM25, Lucene and tf-idf methods in Python.</li>
+                  <li>Implemented an inverted-index generator that reads the raw documents, generates a unigram, bi-gram and tri-gram inverted index, and stores it in JSON format.</li>
+
+                  <li>Compared all four retrieval systems’ performance using their mean precision and recall values on the corpus.</li>
                 </ModalBody>
                 <ModalFooter>
-                  <Button color="primary" onClick={this.toggle}>GitHub Link</Button>{' '}
+                  <a href={`https://github.com/tejasparab1994/searchEngine`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <Button color="link" style={{float: 'right'}}>Code Link</Button>
+              <a href={`https://github.com/tejasparab1994/searchEngine`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Code Link</a>
             </div>
 
           </CardBody>

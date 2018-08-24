@@ -1,9 +1,9 @@
 import React from 'react';
-import Page from '../common/Page';
+// import Page from '../common/Page';
 import {Link} from 'react-router-dom';
-import Footer from '../common/Footer';
-import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button , CardHeader, CardFooter} from 'reactstrap';
-import webserver from '../works/search.png';
+// import Footer from '../common/Footer';
+// import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button , CardHeader, CardFooter} from 'reactstrap';
+// import webserver from '../works/search.png';
 
 const close = {
   fontSize: '40px',
@@ -25,7 +25,7 @@ class VideosPage extends React.Component {
         {/* <iframe autoplay = "0" id="ytplayer" type="text/html" width="640" height="360"
           src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
         frameborder="0"></iframe> */}
-        
+
       </div>
 
 
