@@ -30,16 +30,14 @@ class VideosPage extends React.Component {
         <Link to ="/" className = "cancelButton">
           <i className="fa fa-remove" style={close}></i>
         </Link>
-        {/* <iframe autoplay = "0" id="ytplayer" type="text/html" width="640" height="360"
-          src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
-        frameborder="0"></iframe> */}
+        
         <div className="videos py-3">
           <Server />
           <Boston />
           <Phasmo />
           <Acro />
           <Unbox />
-          
+
         </div>
         <Footer />
       </div>

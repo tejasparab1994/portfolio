@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Footer from '../common/Footer';
 import Snow from 'react-snow-effect';
+// import SnowStorm from 'react-snowstorm';
 import ContactFooter from './ContactFooter';
+
 const close = {
   fontSize: '40px',
   color: 'white'
@@ -27,13 +28,13 @@ class ContactPage extends React.Component {
           </div>
           <div className ="contactIcons">
 
-            <a href="https://www.linkedin.com/in/tejasbhaskarparab/" target="_blank" style={{textDecoration: 'none', color: 'white'}}>
+            <a href="https://www.linkedin.com/in/tejasbhaskarparab/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'white'}}>
               <i className="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
 
             &nbsp;
 
-            <a href = "https://github.com/tejasparab1994" target="_blank" style ={{textDecoration: 'none', color: 'white'}}>
+            <a href = "https://github.com/tejasparab1994" target="_blank" rel="noopener noreferrer" style ={{textDecoration: 'none', color: 'white'}}>
               <i className="fa fa-github" aria-hidden="true"></i>
             </a>
 
@@ -45,7 +46,7 @@ class ContactPage extends React.Component {
 
             &nbsp;
 
-            <a href = "https://www.facebook.com/TJ.parab" target = "_blank" style = {{textDecoration: 'none', color: 'white'}}>
+            <a href = "https://www.facebook.com/TJ.parab" target = "_blank" rel="noopener noreferrer" style = {{textDecoration: 'none', color: 'white'}}>
               <i className="fa fa-facebook-square" aria-hidden="true"></i>
             </a>
 

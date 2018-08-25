@@ -29,31 +29,31 @@ class WorkPage extends React.Component {
       <div className ="workPage">
         <Snow />
         <Link to ="/" className = "cancelButton">
-          <i className="fa fa-remove" style={close}></i>
+        <i className="fa fa-remove" style={close}></i>
+      </Link>
+      <div className = "text-center">
+        <button className = "btn-primary btn-lg float-right work-button">
+          <Link to = "/resume" style={{ textDecoration: 'none', color:'white' }}>
+          Fork Resume
         </Link>
-        <div className = "text-center">
-          <button className = "btn-primary btn-lg float-right work-button">
-            <Link to = "/resume" style={{ textDecoration: 'none', color:'white' }}>
-              Fork Resume
-            </Link>
-          </button>
-        </div>
+      </button>
+    </div>
 
-        <div className = "workFlex">
-          <DevConnector/>
-          <Jobs/>
-          <Othello/>
-          <WebServer/>
-          <TaskTracker />
-          <Memory />
-          <Search />
-          <Virtual />
+    <div className = "workFlex">
+      <DevConnector/>
+      <Jobs/>
+      <Othello/>
+      <WebServer/>
+      <TaskTracker />
+      <Memory />
+      <Search />
+      <Virtual />
 
-        </div>
-        <Footer />
-      </div>
-    );
-  }
+    </div>
+    <Footer />
+  </div>
+);
+}
 }
 
 
