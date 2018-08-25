@@ -367,6 +367,7 @@
 	align-content: stretch;
 }
 
+
 .workFlex >* {
 	flex: 0 0 30%;
 }
@@ -419,11 +420,32 @@
 	padding-left: 1rem;
 }
 
+
+/* Videos end */
+
+
+
+/* single resume page */
+
 .resume {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
+
+/* resume end */
+
+
+/* Contact me */
+
+
+
+
+
+
+
+
 
 
 
@@ -612,23 +634,25 @@
 
 @media screen and (max-width: 1100px) {
 	.footer {
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
+		flex-flow:wrap;
 	}
 	.footer > * {
-		flex: 0 0 100%;
+		flex: 0 0 50%;
 	}
 
 	.address {
-		padding: 0.5rem;
+
+		padding: 0.25rem 0 0 0;
 	}
 
 	.email {
-		padding: 0.5rem;
+		padding: 0.5rem 0 0 0;
 	}
 
 	.contact {
-		padding: 0.5rem;
+		padding: 0.25rem 0 0 0;
 	}
 
 	.copyright {

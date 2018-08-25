@@ -32,32 +32,40 @@ class HomePage extends React.Component {
     return (
       <div id = "bl-main" className="bl-main">
         <section>
-          <div className = "bl-box">
-            <h2>
-              <Link to="about" className = "bl-icon bl-icon-about" style={{ textDecoration: 'none', color:'white' }} onClick= {this.about}  >ABOUT</Link>
-            </h2>
-          </div>
+          <Link to="about"  style={{ textDecoration: 'none', color:'white' }} onClick= {this.about}>
+            <div className = "bl-box">
+              <h2 className = "bl-icon bl-icon-about">
+                ABOUT
+              </h2>
+            </div>
+          </Link>
         </section>
         <section id = "bl-work-section">
-          <div className = "bl-box">
-            <h2>
-              <Link to = "works" className = "bl-icon bl-icon-works" style={{ textDecoration: 'none', color:'white' }} onClick= {this.work} >WORKS</Link>
-            </h2>
-          </div>
+          <Link to = "works"  style={{ textDecoration: 'none', color:'white' }} onClick= {this.work} >
+            <div className = "bl-box">
+              <h2 className = "bl-icon bl-icon-works">
+                WORKS
+              </h2>
+            </div>
+          </Link>
         </section>
         <section>
-          <div className = "bl-box">
-            <h2>
-              <Link to="videos" className="bl-icon bl-icon-blog" style={{ textDecoration: 'none', color:'white' }} onClick = {this.video}>VIDEOS & BLOG</Link>
-            </h2>
-          </div>
+          <Link to="videos"  style={{ textDecoration: 'none', color:'white' }} onClick = {this.video}>
+            <div className = "bl-box">
+              <h2 className="bl-icon bl-icon-blog">
+                VIDEOS & BLOG
+              </h2>
+            </div>
+          </Link>
         </section>
         <section>
-          <div className = "bl-box">
-            <h2>
-              <Link to = "contact" className = "bl-icon bl-icon-contact" style={{ textDecoration: 'none', color:'white' }} onClick = {this.contact}>CONTACT</Link>
-            </h2>
-          </div>
+          <Link to = "contact"  style={{ textDecoration: 'none', color:'white' }} onClick = {this.contact}>
+            <div className = "bl-box">
+              <h2 className = "bl-icon bl-icon-contact">
+                CONTACT
+              </h2>
+            </div>
+          </Link>
         </section>
       </div>
 

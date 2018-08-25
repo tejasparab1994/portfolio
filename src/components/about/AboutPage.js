@@ -60,7 +60,9 @@ class AboutPage extends React.Component {
               </p>
               <img src ={messi} alt ="skills" className="messigif"></img>
               <div>
+                <br />
                 And here's a more professional way to tell you my skills.
+                {/* <br /> */}
                 <button className = "btn-primary btn-block">
                   <Link to = "/resume" style={{ textDecoration: 'none', color:'white' }}>
                     Fork Resume
@@ -68,9 +70,11 @@ class AboutPage extends React.Component {
                 </button>
               </div>
               <p>
+                <br />
                 <b><u><span className="yellow-text">The long version</span></u>: </b>
                 I love building websites and learn about new technologies in our domain. I have been building websites for over 4 years now. My journey began when I started a blog as
-                a 16 year old with a friend of mine back in 2010 <a href={`https://new-world-ro.blogspot.com/`} target="_blank">(Link to the embarrassing blog)</a>.</p>
+                a 16 year old with a friend of mine back in 2010 <a href={`https://new-world-ro.blogspot.com/`} target="_blank" style = {{color: 'yellow'}}>(Link to the embarrassing blog)</a>.
+              </p>
 
               <p>
                 Like any 16 year old, having seen my thoughts being visualized through the blog I yearned to learn more, back then and even today.
@@ -78,13 +82,13 @@ class AboutPage extends React.Component {
 
               <p>
                 When not coding or completing assignments, I like watching other coders live streaming their work like,
-                Daniel Shiffman's Youtube Channel The Coding Train<a href={`https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw`} target="_blank">(Link to Shiffman's channel)</a>
-                or CJ's Coding Garden<a href={`https://www.youtube.com/channel/UCLNgu_OupwoeESgtab33CCw`} target="_blank">(Link to CJ's channel)</a>. These guys are quite fun and
+                Daniel Shiffman's Youtube Channel The Coding Train<a href={`https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw`} target="_blank" style = {{color: 'yellow'}}>(Link to Shiffman's channel)</a>
+                &nbsp; or CJ's Coding Garden <a href={`https://www.youtube.com/channel/UCLNgu_OupwoeESgtab33CCw`} target="_blank" style = {{ color: 'yellow'}}>(Link to CJ's channel) </a>. These guys are quite fun and
                 also give me another perspective into building websites.
               </p>
 
               <p>
-                Apart from coding, I am also a huge soccer fan and have been supporting Manchester United since 2006 (GGMU!). I spend my weekends building something,
+                Apart from coding, I am also a huge soccer fan and have been supporting Manchester United since 2006 (GGMU!). I like to spend my weekends building something,
                 watching soccer or catching up on a movie.
               </p>
 

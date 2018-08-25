@@ -30,13 +30,13 @@ class ResumePage extends React.Component {
     return (
       <div className = "resumePage">
         <Link to ="/" className = "cancelButton">
-        <i className="fa fa-remove" style={close}></i>
-      </Link>
-      <div className = "resume">
-        <PDF
-          file={resume}
-          onDocumentComplete={this.onDocumentComplete}
-          page={this.state.page}
+          <i className="fa fa-remove" style={close}></i>
+        </Link>
+        <div className = "resume">
+          <PDF
+            file={resume}
+            onDocumentComplete={this.onDocumentComplete}
+            page={this.state.page}
         />
       </div>
     </div>
