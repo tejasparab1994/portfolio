@@ -41,7 +41,7 @@ class Othello extends React.Component {
               Phoenix, Elixir, React.js, Redux, Bootstrap
             </CardText>
             <div>
-              <Button color="info" onClick = {this.toggle}>Know More</Button>
+              <Button color="info" onClick = {this.toggle} className = "know">Know More</Button>
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
                 <ModalHeader toggle={this.toggle} charCode="❎">Othello MultiPlayer</ModalHeader>
                 <ModalBody>
@@ -55,7 +55,7 @@ class Othello extends React.Component {
                   <a href={`https://github.com/tejasparab1994/Othello`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <a href={`https://github.com/tejasparab1994/Othello`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Code Link</a>
+              <a href={`https://github.com/tejasparab1994/Othello`} target="_blank" className = "btn btn-secondary code">Code Link</a>
             </div>
 
           </CardBody>

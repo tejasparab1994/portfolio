@@ -40,7 +40,7 @@ class Memory extends React.Component {
               React.js, Elixir, Phoenix
             </CardText>
             <div>
-              <Button color="info" onClick = {this.toggle}>Know More</Button>
+              <Button color="info" onClick = {this.toggle} className ="know">Know More</Button>
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
                 <ModalHeader toggle={this.toggle} charCode="❎">Memory Game</ModalHeader>
                 <ModalBody>
@@ -50,7 +50,7 @@ class Memory extends React.Component {
                   <a href={`https://github.com/tejasparab1994/CS-5610/tree/master/HW05/memory`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <a href={`http://memory2.tejasparab1.com/`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Live Link</a>
+              <a href={`http://memory2.tejasparab1.com/`} target="_blank" className = "btn btn-secondary code">Live Link</a>
             </div>
           </CardBody>
           <CardFooter style={{textAlign: 'center'}}>

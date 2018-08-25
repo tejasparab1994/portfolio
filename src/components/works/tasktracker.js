@@ -44,7 +44,7 @@ class TaskTracker extends React.Component {
 
 
             <div>
-              <Button color="info" onClick = {this.toggle}>Know More</Button>
+              <Button color="info" onClick = {this.toggle} className="know">Know More</Button>
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
                 <ModalHeader toggle={this.toggle} charCode="❎">Tasktracker</ModalHeader>
                 <ModalBody>
@@ -62,7 +62,7 @@ class TaskTracker extends React.Component {
                   <a href={`https://github.com/tejasparab1994/tasktracker3`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <a href={`https://tasks3.tejasparab1.com/`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Live Link</a>
+              <a href={`https://tasks3.tejasparab1.com/`} target="_blank" className = "btn btn-secondary code">Live Link</a>
             </div>
 
 

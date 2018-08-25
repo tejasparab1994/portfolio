@@ -42,7 +42,7 @@ class Search extends React.Component {
             </CardText>
 
             <div>
-              <Button color="info" onClick = {this.toggle}>Know More</Button>
+              <Button color="info" onClick = {this.toggle} className = "know">Know More</Button>
               <Modal size = "lg" isOpen={this.state.modal} toggle={this.toggle} contentClassName = "bg-dark" style = {{ color: 'white'}}>
                 <ModalHeader toggle={this.toggle} charCode="❎">Web Server</ModalHeader>
                 <ModalBody>
@@ -56,7 +56,7 @@ class Search extends React.Component {
                   <a href={`https://github.com/tejasparab1994/searchEngine`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <a href={`https://github.com/tejasparab1994/searchEngine`} target="_blank" style={{float: "right"}} className = "btn btn-secondary">Code Link</a>
+              <a href={`https://github.com/tejasparab1994/searchEngine`} target="_blank" className = "btn btn-secondary code">Code Link</a>
             </div>
 
           </CardBody>

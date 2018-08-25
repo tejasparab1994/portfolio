@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-const footer = () => {
+const ContactFooter = () => {
   return (
-    <div className = "footer text-center">
+    <div className = "footerContact text-center">
       <div className ="address">
         <span role="img" aria-label="address">🏠</span>
         <p>1171 Boylston Street, Boston, MA - 02215</p>
@@ -29,4 +29,4 @@ const footer = () => {
   );
 }
 
-export default footer;
+export default ContactFooter;
