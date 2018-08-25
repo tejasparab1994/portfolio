@@ -11,7 +11,7 @@ import TaskTracker from './tasktracker';
 import Virtual from './virtual';
 import WebServer from './webserver';
 import Footer from '../common/Footer';
-
+import Snow from 'react-snow-effect';
 
 const close = {
   fontSize: '40px',
@@ -27,13 +27,18 @@ class WorkPage extends React.Component {
   render() {
     return (
       <div className ="workPage">
+        <Snow />
         <Link to ="/" className = "cancelButton">
           <i className="fa fa-remove" style={close}></i>
         </Link>
-        {/* <div className = "work_title">
-          <span className="yellow-text"><u>A</u></span>,&nbsp;Few&nbsp;Projects&nbsp;<u>That</u>
-          <span className="yellow-text"><u>&nbsp;I&nbsp;Have&nbsp;Built</u>.</span>
-        </div> */}
+        <div className = "text-center">
+          <button className = "btn-primary btn-lg float-right work-button">
+            <Link to = "/resume" style={{ textDecoration: 'none', color:'white' }}>
+              Fork Resume
+            </Link>
+          </button>
+        </div>
+
         <div className = "workFlex">
           <DevConnector/>
           <Jobs/>
@@ -43,6 +48,7 @@ class WorkPage extends React.Component {
           <Memory />
           <Search />
           <Virtual />
+
         </div>
         <Footer />
       </div>

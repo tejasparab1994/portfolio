@@ -5,6 +5,8 @@ import tejas1 from './tejas1.jpeg';
 import messi from "./messi.gif";
 // import {Card} from 'reactstrap';
 import Footer from '../common/Footer';
+import Snow from 'react-snow-effect';
+
 
 const close = {
   fontSize: '40px',
@@ -21,7 +23,7 @@ class AboutPage extends React.Component {
   render() {
     return (
         <div className = "aboutPage">
-
+          <Snow />
           <Link to ="/" className = "cancelButton">
             <i className="fa fa-remove" style={close}></i>
           </Link>
@@ -53,9 +55,20 @@ class AboutPage extends React.Component {
                 having built multiple projects both personal and academic using these technologies.
 
               </p>
-              <img src ={messi} alt ="skills" className="messigif"></img>
               <p>
-                <b><u><span className="yellow-text">The longer version</span></u>: </b>
+                Here's Lionel Messi telling you my skills:
+              </p>
+              <img src ={messi} alt ="skills" className="messigif"></img>
+              <div>
+                And here's a more professional way to tell you my skills.
+                <button className = "btn-primary btn-block">
+                  <Link to = "/resume" style={{ textDecoration: 'none', color:'white' }}>
+                    Fork Resume
+                  </Link>
+                </button>
+              </div>
+              <p>
+                <b><u><span className="yellow-text">The long version</span></u>: </b>
                 I love building websites and learn about new technologies in our domain. I have been building websites for over 4 years now. My journey began when I started a blog as
                 a 16 year old with a friend of mine back in 2010 <a href={`https://new-world-ro.blogspot.com/`} target="_blank">(Link to the embarrassing blog)</a>.</p>
 
@@ -78,9 +91,7 @@ class AboutPage extends React.Component {
             </div>
 
           </div>
-          <div>
-            <Footer />
-          </div>
+          <Footer />
         </div>
 
     );

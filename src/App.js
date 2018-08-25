@@ -6,6 +6,7 @@ import AboutPage from './components/about/AboutPage';
 import ContactPage from './components/Contact/ContactPage';
 import VideosPage from './components/Videos/VideosPage';
 import WorkPage from './components/works/WorkPage';
+import ResumePage from './components/resume/ResumePage';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
                   <Route path = "/works" component = {WorkPage} />
                   <Route path = "/contact" component= {ContactPage} />
                   <Route path = "/videos" component= {VideosPage} />
+                  <Route path = "/resume" component = {ResumePage} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>
                 </div>
