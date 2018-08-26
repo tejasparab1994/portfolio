@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Snow from 'react-snow-effect';
+//import Snow from 'react-snow-effect';
 // import SnowStorm from 'react-snowstorm';
 import ContactFooter from './ContactFooter';
 
@@ -18,7 +18,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <div className = "contactPage">
-        <Snow />
+        //<Snow />
         <Link to ="/" className = "cancelButton">
           <i className="fa fa-remove" style={close}></i>
         </Link>
