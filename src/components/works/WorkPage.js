@@ -11,7 +11,6 @@ import TaskTracker from './tasktracker';
 import Virtual from './virtual';
 import WebServer from './webserver';
 import Footer from '../common/Footer';
-import Snow from 'react-snow-effect';
 
 const close = {
   fontSize: '40px',
@@ -27,7 +26,7 @@ class WorkPage extends React.Component {
   render() {
     return (
       <div className ="workPage">
-        <Snow />
+
         <Link to ="/" className = "cancelButton">
         <i className="fa fa-remove" style={close}></i>
       </Link>

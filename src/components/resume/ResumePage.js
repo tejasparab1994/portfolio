@@ -2,6 +2,7 @@ import React from 'react';
 import PDF from 'react-pdf-js';
 import resume from './resume.pdf';
 import {Link} from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 
 const close = {
@@ -29,8 +30,8 @@ class ResumePage extends React.Component {
 
     return (
       <div className = "resumePage">
-        <Link to ="/" className = "cancelButton">
-          <i className="fa fa-remove" style={close}></i>
+        <Link to ="/">
+          <Button color = "primary" style = {{margin: '10px'}}>Back</Button>{' '}
         </Link>
         <div className = "resume">
           <PDF

@@ -206,6 +206,10 @@ width: 100%;
 
 /* About page */
 
+.aboutPage {
+	overflow:hidden;
+}
+
 
 .yellow-text {
 	color:yellow;
@@ -223,6 +227,7 @@ width: 100%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 1.2em;
 	color: white;
+	flex-wrap:wrap;
 }
 
 
@@ -431,11 +436,7 @@ color: white;
 
 /* single resume page */
 
-.resume {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
+
 
 
 /* resume end */
@@ -443,24 +444,47 @@ color: white;
 
 /* Contact me */
 
+.contain{
+	width: 100%;
+
+}
+
+.contactPage {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.cancelButton {
+	/* display: flex; */
+	text-align: right;
+}
+
+.resume {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
 .contactFlex {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
 	flex-flow: wrap;
-	padding: 1.5rem 5% 5%;
-	/* padding: calc(15% + 1.5rem) 5% 5%; */
+	padding: calc(10% + 1.5rem) 5% 5%;
 	font-family: 'Rajdhani';
 	font-size: 5rem;
 	color: white;
 	justify-content: space-around;
 	align-content: stretch;
+	flex: 1;
 }
 
 .contactFlex > * {
 	flex: 0 0 100%;
 }
+
 
 .footerContact {
 	display: flex;
@@ -468,13 +492,13 @@ color: white;
 	flex-flow: wrap;
 	background: #272727;
 	width: 100%;
-	/* line-height: 20px; */
-	/* padding: 1.5rem 5% 5%; */
 	color: white;
 	justify-content: space-around;
+	position: fixed;
 	bottom: 0;
 	left: 0;
-	position: fixed;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
 
@@ -483,10 +507,12 @@ color: white;
 }
 
 
+
 @media screen and (max-width: 360px) {
 	.contactFlex {
 		font-size: 2rem !important;
 	}
+
 }
 
 @media screen and (max-width: 373px) {
@@ -527,6 +553,12 @@ color: white;
 	.work_title {
 		font-size: 20px;
 	}
+
+	.contactFlex {
+		font-size: 3rem;
+	}
+
+
 }
 
 
@@ -669,6 +701,7 @@ color: white;
 		justify-content: center;
 		flex-flow: wrap;
 		margin: -10% !important;
+		margin-bottom: 2px !important;
 
 	}
 
@@ -678,7 +711,7 @@ color: white;
 
 
 	.fourthdiv {
-		/* margin-top: -10%; */
+		font-size: 90%;
 	}
 
 	.contactFlex {
@@ -716,14 +749,14 @@ color: white;
 		padding: 0.5rem;
 	}
 
-	.footerContact {
+	/* .footerContact {
 		flex-direction: row;
 		justify-content: center;
-		flex-flow:wrap;
+		flex-flow: wrap;
 	}
 	.footerContact > * {
 		flex: 0 0 50%;
-	}
+	} */
 
 
 }

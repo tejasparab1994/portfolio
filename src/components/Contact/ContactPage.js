@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-//import Snow from 'react-snow-effect';
-// import SnowStorm from 'react-snowstorm';
 import ContactFooter from './ContactFooter';
 
 const close = {
@@ -17,43 +15,49 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <div className = "contactPage">
-        //<Snow />
+      <div className = "contain">
         <Link to ="/" className = "cancelButton">
           <i className="fa fa-remove" style={close}></i>
         </Link>
-        <div className = "contactFlex text-center">
-          <div className ="contactText">
-            You may contact me on
+
+        <div className = "contactPage">
+
+
+          <div className = "contactFlex text-center">
+            <div className ="contactText">
+              You may contact me on
+
+              <div className ="contactIcons">
+
+                <a href="https://www.linkedin.com/in/tejasbhaskarparab/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'white'}}>
+                  <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+
+                &nbsp;
+
+                <a href = "https://github.com/tejasparab1994" target="_blank" rel="noopener noreferrer" style ={{textDecoration: 'none', color: 'white'}}>
+                  <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
+
+                &nbsp;
+
+                <a href="mailto: tejas.bhaskar.parab@gmail.com?Subject=Hello" target="_top" style={{textDecoration: 'none', color: "white"}}>
+                  <i className="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+
+                &nbsp;
+
+                <a href = "https://www.facebook.com/TJ.parab" target = "_blank" rel="noopener noreferrer" style = {{textDecoration: 'none', color: 'white'}}>
+                  <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+
+
+              </div>
+            </div>
           </div>
-          <div className ="contactIcons">
 
-            <a href="https://www.linkedin.com/in/tejasbhaskarparab/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'white'}}>
-              <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-
-            &nbsp;
-
-            <a href = "https://github.com/tejasparab1994" target="_blank" rel="noopener noreferrer" style ={{textDecoration: 'none', color: 'white'}}>
-              <i className="fa fa-github" aria-hidden="true"></i>
-            </a>
-
-            &nbsp;
-
-            <a href="mailto: tejas.bhaskar.parab@gmail.com?Subject=Hello" target="_top" style={{textDecoration: 'none', color: "white"}}>
-              <i className="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-
-            &nbsp;
-
-            <a href = "https://www.facebook.com/TJ.parab" target = "_blank" rel="noopener noreferrer" style = {{textDecoration: 'none', color: 'white'}}>
-              <i className="fa fa-facebook-square" aria-hidden="true"></i>
-            </a>
-
-
-          </div>
+          <ContactFooter />
         </div>
-        <ContactFooter />
       </div>
     );
   }

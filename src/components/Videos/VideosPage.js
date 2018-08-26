@@ -1,15 +1,14 @@
 import React from 'react';
-// import Page from '../common/Page';
+
 import {Link} from 'react-router-dom';
 import Footer from '../common/Footer';
-// import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button , CardHeader, CardFooter} from 'reactstrap';
-// import webserver from '../works/search.png';
+
 import Server from './server';
 import Boston from './boston';
 import Phasmo from './phasmo';
 import Acro from './acro';
 import Unbox from './unbox';
-import Snow from 'react-snow-effect';
+
 
 
 const close = {
@@ -26,11 +25,10 @@ class VideosPage extends React.Component {
   render() {
     return (
       <div className =" videosPage">
-        <Snow />
         <Link to ="/" className = "cancelButton">
           <i className="fa fa-remove" style={close}></i>
         </Link>
-        
+
         <div className="videos py-3">
           <Server />
           <Boston />
