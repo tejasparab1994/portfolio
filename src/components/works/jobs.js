@@ -62,7 +62,7 @@ class Jobs extends React.Component {
                   <a href={`https://github.com/tejasparab1994/jobPortal`} target="_blank" onClick={this.toggle} className = "btn btn-secondary">Code Link</a>
                 </ModalFooter>
               </Modal>
-              <a href={`https://github.com/tejasparab1994/jobPortal`} target="_blank" className = "btn btn-secondary code">Code Link</a>
+              <a href={`http://jobs.tejasparab1.com/`} target="_blank" className = "btn btn-secondary code">Live Link</a>
             </div>
 
           </CardBody>

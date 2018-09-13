@@ -17,7 +17,7 @@ const footer = () => {
         </span>
         <p>
           <a href="mailto: tejas.bhaskar.parab@gmail.com?Subject=Hello" target="_top" style={{color: "white"}}>
-            tejas.bhaskar.parab@gmail.com
+            parab.t654@gmail.com
           </a>
         </p>
       </div>
