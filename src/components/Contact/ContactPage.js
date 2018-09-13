@@ -41,7 +41,7 @@ class ContactPage extends React.Component {
 
                 &nbsp;
 
-                <a href="mailto: tejas.bhaskar.parab@gmail.com?Subject=Hello" target="_top" style={{textDecoration: 'none', color: "white"}}>
+                <a href="mailto: parab.t654@gmail.com?Subject=Hello" target="_top" style={{textDecoration: 'none', color: "white"}}>
                   <i className="fa fa-envelope" aria-hidden="true"></i>
                 </a>
 
