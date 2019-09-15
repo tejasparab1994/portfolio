@@ -49,11 +49,13 @@ class AboutPage extends React.Component {
             <p>
               <b><u><span className="yellow-text">The short version</span></u>: </b>
               I am Tejas Parab, a graduate student at Northeastern University currently pursuing my Master's degree in Computer Science.
-              I love working with <span className="yellow-text">React, redux, mongoDB, express and node</span>. I am also skilled in
+          My most recent work experience was working as a <span className="yellow-text"> Software Engineering Co-op at Peapod Digital Labs. </span>
+          I love working with <span className="yellow-text">React, redux, mongoDB, express and node.js</span>. I am also skilled in
               <span className = "yellow-text"> elixir</span> and the <span className = "yellow-text">Phoenix Framework </span>
               having built multiple projects both personal and academic using these technologies.
 
             </p>
+          <p> Through my work experiences and my time at Northeastern, I have gained industrial knowledge, improved software engineering and interpersonal skills. </p>
             <p>
               Here's Lionel Messi telling you my skills:
             </p>
