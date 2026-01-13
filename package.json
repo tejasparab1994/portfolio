@@ -10,14 +10,14 @@
     "bootstrap": "^4.3.1",
     "i": "^0.3.6",
     "jquery": "^3.4.1",
-    "npm": "^6.11.3",
+    "npm": "^11.7.0",
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.3",
     "react-dom": "^16.4.2",
     "react-pdf": "^3.0.5",
     "react-pdf-js": "^4.0.0-alpha.6",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "react-snow-effect": "^1.2.0",
     "redux": "^4.0.0",
     "underscore": "^1.9.1"
@@ -37,7 +37,7 @@
     "react-router-dom": "^4.3.1",
     "react-transition-group": "^2.4.0",
     "reactstrap": "^6.4.0",
-    "sass-brunch": "^2.10.4",
+    "sass-brunch": "^3.0.1",
     "uglify-js-brunch": "2.10.0"
   }
 }
