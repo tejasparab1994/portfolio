@@ -17,7 +17,7 @@
     "react-pdf": "^3.0.5",
     "react-pdf-js": "^4.0.0-alpha.6",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "react-snow-effect": "^1.2.0",
     "redux": "^4.0.0",
     "underscore": "^1.9.1"
